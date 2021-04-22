@@ -267,6 +267,14 @@ public class MyBinarySearchTree {
         return temp;
 
     }
+    public int height(Node node){
+        if (node==null){
+            return -1;
+        }
+        else{
+            return 1+Math.max(height(node.getLeft()),height(node.getRight()));
+        }
+    }
 
 
 
